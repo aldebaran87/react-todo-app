@@ -4,7 +4,6 @@ import styles from './TodoItems.module.css'
 
 
 const Todoitem = ({ text, deleteH, toggleTodo, number }) => {
-    console.log(number)
 
     return (
         <div className={`${styles.text_itex} ${text.isComplited ? styles.text_gray : ''}`}>
