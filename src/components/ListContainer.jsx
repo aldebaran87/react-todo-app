@@ -6,13 +6,13 @@ const ListContainer = ({ todos, del, toggleTodo }) => {
     return (
         <div className="text-container">
             <TransitionGroup component={null}>
-                {todos.map((todo) => {
+                {todos.map((todo, index) => {
                     return <CSSTransition
                         key={todo.id}
                         timeout={500}
                         classNames="item"
                     >
-                        <Todoitem toggleTodo={toggleTodo} deleteH={del} text={todo} />
+                        <Todoitem number={index + 1} toggleTodo={toggleTodo} deleteH={del} text={todo} />
                     </CSSTransition>
                 })}
             </TransitionGroup>
