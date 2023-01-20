@@ -1,0 +1,25 @@
+.button {
+    font-size: 24px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    font-weight: 500;
+    margin-right: 20px;
+
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: rgb(208, 63, 44);
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 650px) {
+    .button {
+        max-width: 50px;
+    }
+} */
